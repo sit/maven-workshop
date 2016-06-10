@@ -133,8 +133,12 @@ Dependencies can also have something called a _scope_. A scope is essentially
 a specific classpath. Two common scopes are `compile` and `test`. The `test` scope
 is a superset of the `compile` scope.
 
-Add the latest version of JUnit as a `test` scope dependency. Verify that adding
-`import org.junit.Test` to `StringHolder.java` results in a compilation error.
+Add the latest version of JUnit as a `test` scope dependency. (Use the groupId junit
+and artifactId junit.)
+
+Verify that adding `import org.junit.Test` to `StringHolder.java` results in a compilation error.
+(Then remove the line.)
+
 Now create a simple test in `src/test/java`:
 
     import org.junit.*;
