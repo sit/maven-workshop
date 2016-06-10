@@ -22,6 +22,9 @@ Examine the output of running `mvn package`.
 1. What lifecycle stages are executed?
 2. What files are created in the filesystem?
 
+The output (e.g., a `jar`) from a build is referred to as an _artifact_. What
+is the filename of the artifact from your build?
+
 Here is another common Maven invocation:
 
     mvn clean

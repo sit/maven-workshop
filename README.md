@@ -12,6 +12,17 @@ that will help you learn key concepts in Maven and how to use them.
 * Based on a plugin architecture to allow extensibility
 * Executes a series of build phases ("lifecycle stages")
 
+## Exercises
+
+The following exercises are intended to allow you to explore basic features of
+Maven live on your own computer. You should not need to use an IDE. You should
+be able to use a terminal and text editor (vim/nano/emacs/Atom/SublimeText/etc)
+to edit files. You will also probably need to search the web for various bits
+of information about Maven.
+
+1. [Maven basics](0-basics/)
+2. [Java essentials](1-java/)
+
 ## Other build tools
 
 * [gmake](https://www.gnu.org/software/make/) and [automake](https://www.gnu.org/software/automake/)
@@ -25,10 +36,6 @@ that will help you learn key concepts in Maven and how to use them.
 * [pants](http://www.pantsbuild.org/) or [buck](https://buckbuild.com/) or [Bazel](http://www.bazel.io/):
     * Flexible beyond Java, fast incremental builds
     * Open Source versions of things built at Twitter and Facebook
-
-## Exercises
-
-1. [Maven basics](0-basics/)
 
 ## Problems with Maven
 
