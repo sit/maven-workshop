@@ -142,7 +142,7 @@ Verify that adding `import org.junit.Test` to `StringHolder.java` results in a c
 Now create a simple test in `src/test/java`:
 
     import org.junit.*;
-    class StringHolderTest {
+    public class StringHolderTest {
         @Test
         public void givenNull_returnsEmpty() {
              StringHolder h = new StringHolder(null);
