@@ -6,23 +6,29 @@ that will help you learn key concepts in Maven and how to use them.
 ## What is Maven?
 
 * Build tool that also tries to do many other things (like manage web sites)
-* Focuses on configuration and convention over explicit rules
+* Favors convention (with configuration) over explicit rules
     * "Build me a jar out of stuff in src/main/java" vs
     * "Run `javac` if these files change, then run `jar cf foo.jar`"
 * Based on a plugin architecture to allow extensibility
-* Executes a series of build phases
-* Pretty decent way of building Java stuff
+* Executes a series of build phases ("lifecycle stages")
 
-* Alternatives:
-    * [ant](http://ant.apache.org/):
-        * Do you like writing scripts in XML?
-    * [gradle](http://gradle.org/):
-        * "Modern Open-Source Enterprise Build Automation"
-        * Adopted by Android
-        * Highly configurable DSL based on Groovy, processes dependency graph 
-    * [pants](http://www.pantsbuild.org/) or [buck](https://buckbuild.com/) or [Bazel](http://www.bazel.io/):
-        * Flexible beyond Java, fast incremental builds
-        * Open Source versions of things built at Twitter and Facebook
+## Other build tools
+
+* [gmake](https://www.gnu.org/software/make/) and [automake](https://www.gnu.org/software/automake/)
+    * Make. So great that we built a tool to generate Makefiles!
+* [ant](http://ant.apache.org/):
+    * Do you like writing build scripts in XML?
+* [gradle](http://gradle.org/):
+    * "Modern Open-Source Enterprise Build Automation"
+    * Adopted by Android
+    * Highly configurable DSL based on Groovy, processes dependency graph
+* [pants](http://www.pantsbuild.org/) or [buck](https://buckbuild.com/) or [Bazel](http://www.bazel.io/):
+    * Flexible beyond Java, fast incremental builds
+    * Open Source versions of things built at Twitter and Facebook
+
+## Exercises
+
+1. [Maven basics](0-basics/)
 
 ## Problems with Maven
 
