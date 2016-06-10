@@ -120,7 +120,7 @@ resolving the dependencies against a repository, downloading and caching the
 artifact. Once the artifact is downloaded, Maven makes the jar available in
 the classpath of Java during compilation.
 
-Modify your build to import `com.google.common.base.Strings` and modify the
+Modify your class Java file to import `com.google.common.base.Strings` and modify the
 constructor of `StringHolder` to convert null strings to empty ones using
 [`Strings.nullToEmpty`](http://google.github.io/guava/releases/snapshot/api/docs/com/google/common/base/Strings.html#nullToEmpty(java.lang.String)). Verify that this does not compile.
 
