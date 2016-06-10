@@ -44,6 +44,11 @@ Try running:
 
 What do these commands tell you? When might these commands be useful?
 
+## Bonus
+
+Can you make the `[WARNING]`s in the build output go away?
+
 # References
 
+* [Maven in 5 minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
 * [POM reference](https://maven.apache.org/pom.html)
