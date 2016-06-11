@@ -5,24 +5,27 @@
 Maven expects certain files to be in certain locations. At a high-level, the tree
 it expects looks something like:
 
+     #
+     # This is just an example!
+     #
      /project
          pom.xml
          src/
              main/
-                 java/
-                     com/
+                 java/                    # Maven automatically will build all source in here
+                     com/                 # Directory structure mirrors Java package structure
                          toasttab/
-                              package1/
-                                  A.java
+                              demo/
+                                  A.java  # Defines a class called A
                                   B.java
-                              package2/
+                              util/
                                   X.java
                                   Y.java
                  resources/
                      custom.properties
                      logo.png
              test/
-                 java/
+                 java/                    # This is just test code.
                      com/
                          toasttab/
                               package1/
@@ -35,16 +38,24 @@ The POM is at the top and then source files are in `src/main` and test files
 are in `src/test`.  This convention helps Maven reduce the amount of
 configuration needed to get a build.
 
-Create a POM for a build with one class (e.g., sample source below) and build
-it. Which lifecycle phase creates the jar? Which phase compiles it? What are
-the other phases?
+Create the file structure and POM needed for a simple project with one class:
 
     class StringHolder {
-        private String s;
-        StringHolder(String s) { this.s = s; }
+        private final String s;
+        StringHolder(String s) {
+            this.s = s;
+        }
         String get() { return s; }
         // You should probably also override equals and hashCode
     }
+
+It's easiest to do this from the Terminal:
+
+    mkdir -p src/{main,test}/java
+
+Then you can create `src/main/java/StringHolder.java`.
+
+After you've written the POM, use `mvn package` to build the jar.
 
 ## Build configuration
 
@@ -69,8 +80,8 @@ and target](http://maven.apache.org/plugins/maven-compiler-plugin/examples/set-c
       </pluginManagement>
     </build>
 
-You can verify what happens by running `mvn -X compile` and also setting `JAVA_HOME` to point to
-a Java 7 vs a Java 8 JDK.
+You can verify what happens by running `mvn -X compile` and also setting
+`JAVA_HOME` to point to a Java 7 vs a Java 8 JDK.
 
 ## Repository structure
 
